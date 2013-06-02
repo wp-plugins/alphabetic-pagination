@@ -13,7 +13,6 @@ Alphabetic pagination is a great plugin to filter your posts/pages with alphabet
 
 
 ==Screenshots ==
-
 1. Alphabetic Pagination settings form.
 
 ==Description ==
