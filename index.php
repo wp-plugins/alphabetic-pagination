@@ -6,7 +6,7 @@ Plugin Name: Alphabetic Pagination
 
 Plugin URI: http://www.websitedesignwebsitedevelopment.com/wordpress/plugins/alphabetic-pagination
 
-Description: Alphabetic pagination is a great plugin to filter your posts/pages with alphabets. It is simple to use and easy to understand for customization. You can choose horizontal or vertical layout settings and alphabets lower/uppercase settings. It is coded to provide you the ultimate convenience that you will save your time instead of customizing the queries. It ensures the security measures required to be a good addition in WordPress Plugins collection.
+Description: Alphabetic pagination is a great plugin to filter your posts/pages with alphabets. It is simple to use and easy to understand for customization.
 
 Version: 0.1
 
