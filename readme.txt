@@ -13,7 +13,7 @@ Alphabetic pagination is a great plugin to filter your posts/pages with alphabet
 
 
 ==Screenshots ==
-1. This screen shot of alphabetic pagination settings page.
+1. This screenshot of alphabetic pagination settings page.
 
 ==Description ==
 * Author: [Fahad Mahmood](http://www.androidbubbles.com/contact)
