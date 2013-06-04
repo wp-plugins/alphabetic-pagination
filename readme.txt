@@ -1,7 +1,7 @@
-﻿==Alphabetic Pagination ===
+﻿== Alphabetic Pagination ===
 
 Contributors: Fahad Mahmood
-
+Donate link: http://goo.gl/GHX5N
 Tags: alphabetic pagination, pagination, filtering, alphabetic filtering, alphabetic sorting, alphabet listing, sorting posts, sorting pages, alphabetic navigation
 
 Requires at least: 3.0
@@ -12,10 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Alphabetic pagination is a great plugin to filter your posts/pages with alphabets. It is simple to use and easy to understand for customization. You can choose horizontal or vertical layout settings and alphabets lower/uppercase settings. It is coded to provide you the ultimate convenience that you will save your time instead of customizing the queries. It ensures the security measures required to be a good addition in WordPress Plugins collection.
 
 
-==Screenshots ==
-1. This screenshot of alphabetic pagination settings page.
-
-==Description ==
+== Description ==
 * Author: [Fahad Mahmood](http://www.androidbubbles.com/contact)
 
 * Project URI: <http://www.websitedesignwebsitedevelopment.com/wordpress/plugins/alphabetic-pagination>
@@ -31,12 +28,16 @@ Important!
 [WDWD Blog][Wordpress][]: http://www.websitedesignwebsitedevelopment.com/category/website-development/php-frameworks/wordpress/
 
 
-==Installation ==
+== Installation ==
 To use Alphabetic Pagination, you will need:
 * 	an installed and configured copy of [WordPress][]
 
 	(version 3.0 or later).
 *	FTP, SFTP or shell access to your web host
+
+== Screenshots ==
+1. This screenshot of alphabetic pagination settings page.
+
 = New Installations =
 
 Method-A:
@@ -70,15 +71,26 @@ Method-B:
 
 [Alphabetic Pagination Quick Start]: http://www.websitedesignwebsitedevelopment.com/wordpress/plugins/alphabetic-pagination
 
-==Changelog ==
+== Changelog ==
 
+= 1.0 =
+* Taxonomies option is added. Now you can restrict alphabetic pagination to particular views instead of displaying to whole website.
+= 0.3 =
+* CSS selectors are given in dropdown with an input field to change the pagination position.
+= 0.2 =
+* Default settings are implemented for uppercase and horizontal layout.
 
-==Upgrade Notice =
+== Upgrade Notice =
+
+= 1.0 =
+It is recommended that you update this version, it will give you better control on alphabetic pagination. If you feel any ambiguity, must inform me.
+= 0.3 =
+Useful for those guys who want to use other CSS selectors to place pagiantion around. Default selecor was #content.
+= 0.2 =
+On activation, default settings will be automatically implemented so sudden layout disturbance will be handled.
 
 = Upgrades =
-To *upgrade* an existing installation of Alphabetic Pagination to the most recent
-
-release:
+To *upgrade* an existing installation of Alphabetic Pagination to the most recent release:
 1.	Download the Alphabetic Pagination installation package and extract the files on
 
 	your computer. 
@@ -97,7 +109,7 @@ release:
 [Alphabetic Pagination project homepage]: http://www.androidbubbles.com/extends/wordpress/plugins/
 
 
-==License ==
+== License ==
 The Alphabetic Pagination plugin is copyright © 2013-2014 by Fahad Mahmood. It uses custom code written by Fahad Mahmood or taken from open discussion forum(s) according to the terms of the [GNU General Public License][].
 This program is free software; you can redistribute it and/or modify it under
 
