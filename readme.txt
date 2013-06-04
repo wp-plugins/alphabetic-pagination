@@ -38,7 +38,7 @@ To use Alphabetic Pagination, you will need:
 *	FTP, SFTP or shell access to your web host
 
 == Screenshots ==
-1. This screen shot of alphabetic pagination settings page.
+1. This screenshot of alphabetic pagination settings page.
 
 
 = New Installations =
