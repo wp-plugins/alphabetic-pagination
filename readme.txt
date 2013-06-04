@@ -1,4 +1,4 @@
-﻿== Alphabetic Pagination ===
+﻿=== Alphabetic Pagination ===
 
 Contributors: Fahad Mahmood
 Donate link: http://goo.gl/GHX5N
