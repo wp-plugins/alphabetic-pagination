@@ -83,7 +83,7 @@ Method-B:
 = 0.2 =
 * Default settings are implemented for uppercase and horizontal layout.
 
-= Upgrade Notice =
+== Upgrade Notice ==
 
 = 1.0 =
 It is recommended that you update this version, it will give you better control on alphabetic pagination. If you feel any ambiguity, must inform me.
