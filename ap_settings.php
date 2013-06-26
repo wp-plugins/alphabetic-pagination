@@ -60,12 +60,67 @@ $ap_all = (get_option('ap_all')==1?true:false);
 </div>
 
 
+<div class="ap_notes">By default this plugin enables pagination on the default posts page (Settings > Reading). The checkbox below enables Alphabetical Pagination on all other templates.</div>
 
 <table class="form-table">
 
 
 
-<tbody><tr valign="top">
+<tbody>
+
+
+
+<th scope="row">Display on all lists?</th>
+
+
+
+<td>
+
+
+
+<fieldset>
+
+	<p>
+   <label for="ap_all_yes">
+		<input type="radio" <?php echo ($ap_all?'checked="checked"':''); ?> class="tog" id="ap_all_yes" value="1" name="ap_all">Yes</label>
+	</p>
+    <p>
+   <label for="ap_all_no">
+		<input type="radio" <?php echo ($ap_all?'':'checked="checked"'); ?> class="tog" id="ap_all_no" value="0" name="ap_all">No</label>
+	</p>
+
+
+
+
+
+</fieldset>
+
+
+<div class="ap_tax_div <?php echo $ap_all?'hide':''; ?>">
+
+<fieldset>
+
+	<p>
+    <select class="ap_taxes" name="ap_tax[]" id="tax_selector" multiple="multiple">
+    	<option value="">Select</option>
+    	<?php foreach($ap_taxonomies as $tax): ?>
+    	<option value="<?php echo $tax; ?>" <?php echo in_array($tax, $stored_tax)?'selected="selected"':''; ?>><?php echo $tax; ?></option>    
+        <?php endforeach; ?>  
+    </select>
+    
+	</p>
+Note: Taxonomies can be selected as multiple.
+</fieldset>
+
+</div>
+
+
+
+
+</td></tr>
+
+
+<tr valign="top">
 
 
 
@@ -175,7 +230,11 @@ $ap_all = (get_option('ap_all')==1?true:false);
 
 
 
-<th scope="row">DOM Position?</th>
+<th scope="row">DOM Position?
+<br />
+<span class="ap_caption">This is the HTML element where the Alphabetical Pagination will be placed into.</span>
+
+</th>
 
 
 
@@ -233,54 +292,6 @@ $ap_all = (get_option('ap_all')==1?true:false);
 
 
 
-<th scope="row">Display on all lists?</th>
-
-
-
-<td>
-
-
-
-<fieldset>
-
-	<p>
-   <label for="ap_all_yes">
-		<input type="radio" <?php echo ($ap_all?'checked="checked"':''); ?> class="tog" id="ap_all_yes" value="1" name="ap_all">Yes</label>
-	</p>
-    <p>
-   <label for="ap_all_no">
-		<input type="radio" <?php echo ($ap_all?'':'checked="checked"'); ?> class="tog" id="ap_all_no" value="0" name="ap_all">No</label>
-	</p>
-
-
-
-
-
-</fieldset>
-
-
-<div class="ap_tax_div <?php echo $ap_all?'hide':''; ?>">
-
-<fieldset>
-
-	<p>
-    <select class="ap_taxes" name="ap_tax[]" id="tax_selector" multiple="multiple">
-    	<option value="">Select</option>
-    	<?php foreach($ap_taxonomies as $tax): ?>
-    	<option value="<?php echo $tax; ?>" <?php echo in_array($tax, $stored_tax)?'selected="selected"':''; ?>><?php echo $tax; ?></option>    
-        <?php endforeach; ?>  
-    </select>
-    
-	</p>
-Note: Taxonomies can be selected as multiple.
-</fieldset>
-
-</div>
-
-
-
-
-</td></tr>
 
 
 

@@ -76,7 +76,8 @@ Method-B:
 
 == Changelog ==
 = 1.1 =
-* Multilinguage support for alphabets.
+* Multilinguage support for alphabets. (Thanks to Andrew from Russia)
+* Improved user interface and helping text. (Thanks to Bart De Vuyst)
 = 1.0.4 =
 * Custom DOM selection is improved.
 = 1.0.3 =
@@ -94,9 +95,9 @@ Method-B:
 
 == Upgrade Notice ==
 = 1.1 =
-* If you need to translate your alphabets then must check the available translations before updgrade.
+If you need to translate your alphabets then must check the available translations before updgrade. But for better user interface, you should upgrade it.
 = 1.0.4 =
-* If your pagination is working fine, no need to upgrade. We are in process of improvement, these fixes are as beta version.
+If your pagination is working fine, no need to upgrade. We are in process of improvement, these fixes are as beta version.
 = 1.0.3 =
 If you want to display pagination on other lists too except categories so you should upgrade to this version.
 = 1.0.2 =
