@@ -136,3 +136,14 @@ div.ap_settings_div .doms{
 div.ap_settings_div .doms .dom_options{
 	padding:8px;	
 }
+
+div.ap_settings_div div.ap_notes{
+    clear: both;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 20px 0 10px 10px;
+}
+div.ap_settings_div div.ap_caption{
+	font-size: 10px;
+	margin:10px 0 0 0;
+}

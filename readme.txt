@@ -77,7 +77,7 @@ Method-B:
 == Changelog ==
 = 1.1 =
 * Multilinguage support for alphabets. (Thanks to Andrew from Russia)
-* Improved user interface and helping text. (Thanks to Bart De Vuyst)
+* Improved user interface and helping text. (Thanks to Bart De Vuyst from Belgium)
 = 1.0.4 =
 * Custom DOM selection is improved.
 = 1.0.3 =

@@ -60,7 +60,8 @@ $ap_all = (get_option('ap_all')==1?true:false);
 </div>
 
 
-<div class="ap_notes">By default this plugin enables pagination on the default posts page (Settings > Reading). The checkbox below enables Alphabetical Pagination on all other templates.</div>
+<div class="ap_notes">By default this plugin enables pagination on the default posts page (Settings > Reading).<br />
+The following option enables Alphabetical Pagination on all other templates.</div>
 
 <table class="form-table">
 
@@ -232,7 +233,7 @@ Note: Taxonomies can be selected as multiple.
 
 <th scope="row">DOM Position?
 <br />
-<span class="ap_caption">This is the HTML element where the Alphabetical Pagination will be placed into.</span>
+<div class="ap_caption">This is the HTML element where the Alphabetical Pagination will be placed into.</div>
 
 </th>
 
@@ -327,7 +328,7 @@ Note: Taxonomies can be selected as multiple.
 
 </tbody></table>
 
-<p class="submit"><input type="submit" value="Save Changes" class="button button-primary" id="submit" name="submit"><a class="useful_link">Find this plugin useful?</a></p>
+<p class="submit"><input type="submit" value="Save Changes" class="button button-primary" id="submit" name="submit"><a class="useful_link">Want to appreciate?</a></p>
 
 </form>
 
