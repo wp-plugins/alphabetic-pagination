@@ -155,8 +155,9 @@
 	function ap_where($where){
 
 						global $wpdb;
+						global $ap;
 
-						$where .= ' AND '.$wpdb->prefix.'posts.post_title LIKE "'.mysql_real_escape_string($_GET['ap']).'%"';
+						$where .= ' AND '.$wpdb->prefix.'posts.post_title LIKE "'.mysql_real_escape_string($ap).'%"';
 
 						return $where;
 
@@ -174,6 +175,8 @@
 
 				if(!function_exists('render_alphabets')){
 	function render_alphabets(){
+							
+							global $ap;
 
 							$default_place = get_option('ap_dom')==''?'#content':get_option('ap_dom');
 
@@ -191,7 +194,7 @@
 
 								$alphabets_bar .= '<li>';
 
-								$alphabets_bar .= '<a href="'.add_query_arg( array('ap' => $alphabet), $_SERVER["REQUEST_URI"]).'" class="'.(strtolower($_GET['ap'])==$alphabet?'selected':'').'">'.$alphabet.'</a>';
+								$alphabets_bar .= '<a href="'.add_query_arg( array('ap' => $alphabet), $_SERVER["REQUEST_URI"]).'" class="'.(strtolower($ap)==$alphabet?'selected':'').'">'.$alphabet.'</a>';
 
 								$alphabets_bar .= '</li>';
 								}

@@ -38,7 +38,9 @@ License: GPL3
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 
 
-
+	global $ap;
+	$ap = isset($_GET['ap'])?$_GET['ap']:'';
+	
 	include('functions.php');
 
 
@@ -166,14 +168,21 @@ License: GPL3
 
 	register_deactivation_hook(__FILE__, 'ap_end' );
 
-        function register_ap_scripts() {
-           wp_enqueue_script('jquery');
+    function register_ap_scripts() {
+            
+			plugins_url('style.css', __FILE__);
+			
+			wp_enqueue_script('jquery');
 
-            wp_enqueue_style('ap-pagination', plugins_url('style.css', __FILE__));
+            wp_register_style('ap-pagination', plugins_url('style.css', __FILE__));
+			
+			
+			wp_enqueue_style( 'ap-pagination' );
  
         }
 	
         add_action( 'admin_enqueue_scripts', 'register_ap_scripts' );
+		add_action( 'wp_enqueue_scripts', 'register_ap_scripts' );
 	//add_filter('found_posts_query', 'ap_pagination', 1);
 
 	//pre_get_posts
