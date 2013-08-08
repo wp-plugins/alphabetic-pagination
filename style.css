@@ -11,7 +11,10 @@ a{
 	display:none;
 }
 ul.ap_pagination{		
-	display:none;	
+        display: none;
+        padding: 6px 10px 0;
+        text-align: center;        
+        float: left;
 }
 
 
@@ -146,4 +149,22 @@ div.ap_settings_div div.ap_notes{
 div.ap_settings_div div.ap_caption{
 	font-size: 10px;
 	margin:10px 0 0 0;
+}
+
+ul.gogowords {
+    background: none repeat scroll 0 0 #F0F4F7;
+    border-top: 1px dotted #B1B1B1;
+    
+}
+
+ul.gogowords li a:hover,
+ul.gogowords li a.selected{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+ul.ap_classic {
+    
 }

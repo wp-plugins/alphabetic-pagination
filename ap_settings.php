@@ -5,6 +5,13 @@ $dom_selectors = array(
 '#primary'=>'#primary',
 '#content'=>'#content'
 );
+$ap_styles = array(
+'gogowords'=>'Gogo Words',
+'ap_classic'=>'AP Classic'    
+);
+
+$ap_classes = implode(' ', array_keys($ap_styles));
+
 $ap_taxonomies = get_taxonomies();
 $stored_tax = get_option('ap_tax');
 $stored_langs = get_option('ap_lang');
@@ -119,7 +126,12 @@ Note: Taxonomies can be selected as multiple.
 
 
 </td><td rowspan="4" width="54%" valign="top">Preview:
-
+<select name="ap_style" id="ap_styles">
+    <option value="">Select</option>
+    <?php foreach($ap_styles as $style_name=>$style_value): ?>
+    <option value="<?php echo $style_name; ?>" <?php selected( $style_name, get_option('ap_style') ); ?>><?php echo $style_value; ?></option>    
+    <?php endforeach; ?>        
+</select>
 <?php 
 echo alphabets_bar();
 ap_ready();
@@ -412,6 +424,9 @@ jQuery(document).ready(function($) {
                 jQuery('.ap_pagination').addClass(jQuery(this).attr('id'));
 	});
 	
-	
+	jQuery('select[name="ap_style"]').change(function(){
+                               
+                jQuery('.ap_pagination').removeClass('<?php echo $ap_classes; ?>').addClass(jQuery(this).val());
+        });
 });	
 </script>
