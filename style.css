@@ -21,19 +21,15 @@ ul.ap_pagination{
 
 ul.ap_pagination li{
 
-	padding:2px;	
-
-	width:3.2%;
-
-	
-
+    padding: 2px;
+    width: 3%;
 }
 
 
 ul.layout_H{
 
 	width:96%;
-
+	padding-bottom: 1%;
 }
 
 
@@ -151,20 +147,54 @@ div.ap_settings_div div.ap_caption{
 	margin:10px 0 0 0;
 }
 
-ul.gogowords {
+ul.ap_gogowords {
     background: none repeat scroll 0 0 #F0F4F7;
     border-top: 1px dotted #B1B1B1;
     
 }
 
-ul.gogowords li a:hover,
-ul.gogowords li a.selected{
+ul.ap_gogowords li a:hover,
+ul.ap_gogowords li a.selected{
     background-color: #000000;
     color: #FFFFFF;
     font-weight: bold;
     padding: 2px 4px;
     text-decoration: none;
 }
+
 ul.ap_classic {
     
+}
+
+
+ul.ap_chess {
+    background: none repeat scroll 0 0 #FFF;
+	border:1px solid #000;
+	padding:0px;
+	width:98%;
+}
+ul.ap_chess li{
+	padding:8px 10px;
+	margin:0px;
+}
+ul.layout_V.ap_chess {
+    overflow: hidden;
+    width: 28px;	
+}
+ul.layout_V.ap_chess li{
+	padding:2px 2%;
+	margin:0px;
+	width:98%;
+}
+ul.ap_chess li:nth-child(odd) {background: #FFF; }
+ul.ap_chess li:nth-child(odd) a{color: #000; }
+ul.ap_chess li:nth-child(even) {background: #000; }
+ul.ap_chess li:nth-child(even) a{color: #FFF; }
+
+ul.ap_chess li:nth-child(odd) a:hover,
+ul.ap_chess li:nth-child(odd) a.selected,
+ul.ap_chess li:nth-child(even) a:hover,
+ul.ap_chess li:nth-child(even) a.selected{
+	font-weight:bold; 
+	text-decoration:none;
 }

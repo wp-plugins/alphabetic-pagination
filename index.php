@@ -142,7 +142,14 @@ License: GPL3
 		}			
 			
                 
-                
+ 		if(isset($_REQUEST['ap_style']) && !empty($_REQUEST['ap_style']))		
+
+		{
+
+
+			update_option( 'ap_style', $_REQUEST['ap_style'] );
+
+		}	               
 		
 		include('ap_settings.php');	
 

@@ -6,8 +6,9 @@ $dom_selectors = array(
 '#content'=>'#content'
 );
 $ap_styles = array(
-'gogowords'=>'Gogo Words',
-'ap_classic'=>'AP Classic'    
+'ap_gogowords'=>'Gogo Words',
+'ap_chess'=>'AP Chess',
+'ap_classic'=>'AP Classic'   
 );
 
 $ap_classes = implode(' ', array_keys($ap_styles));
@@ -125,13 +126,16 @@ Note: Taxonomies can be selected as multiple.
 
 
 
-</td><td rowspan="4" width="54%" valign="top">Preview:
+</td><td rowspan="4" width="54%" valign="top">Styles:
 <select name="ap_style" id="ap_styles">
     <option value="">Select</option>
     <?php foreach($ap_styles as $style_name=>$style_value): ?>
     <option value="<?php echo $style_name; ?>" <?php selected( $style_name, get_option('ap_style') ); ?>><?php echo $style_value; ?></option>    
     <?php endforeach; ?>        
-</select>
+</select><br /><br /><br />
+
+Preview:
+
 <?php 
 echo alphabets_bar();
 ap_ready();

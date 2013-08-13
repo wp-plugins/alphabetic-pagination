@@ -43,7 +43,13 @@
 
                                             foreach($alphabets as $language=>$alphabetz){
                                             
-                                            $alphabetz_bar .= '<ul class="ap_'.$language.' ap_pagination case_'.get_option('ap_case').' layout_'.get_option('ap_layout').'">';
+                                            $alphabetz_bar .= '<ul class="ap_'.$language.' ap_pagination case_'.get_option('ap_case').' layout_'.get_option('ap_layout').' '.get_option('ap_style').'">';
+											
+$alphabetz_bar .= '<li>';
+                                                    $alphabetz_bar .= '<a href="'.$_SERVER["REQUEST_URI"].'">#</a>';
+
+                                                    $alphabetz_bar .= '</li>';
+																								
 
                                             foreach($alphabetz as $alphabet){
 

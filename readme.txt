@@ -39,7 +39,7 @@ To use Alphabetic Pagination, you will need:
 
 == Screenshots ==
 1. This screenshot of alphabetic pagination settings page.
-
+2. Pagination styles and preview feature.
 
 = New Installations =
 
@@ -76,7 +76,7 @@ Method-B:
 
 == Changelog ==
 = 1.1.3 =
-Important changes are made, pagination preview is added in settings.
+Pagination styles and preview feature is added.
 = 1.1.2 =
 CSS related bugs are fixed.
 = 1.1.1 =
@@ -101,7 +101,7 @@ Few bugs are fixed.
 
 == Upgrade Notice ==
 = 1.1.3 =
-Must update this release.
+Enhanced release.
 = 1.1.2 =
 Must update this release.
 = 1.1.1 =
