@@ -43,6 +43,7 @@ To use Alphabetic Pagination, you will need:
 3. More pagination styles.
 4. Sepcific categories/items can be selected for the pagination as well.
 5. Auto/Custom Implementation.
+6. Settings Example#1
 
 = New Installations =
 
