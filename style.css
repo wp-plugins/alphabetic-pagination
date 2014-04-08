@@ -17,6 +17,7 @@ ul.ap_pagination{
         float: left;
 		list-style: none outside none;
 		z-index:2;
+		position:relative;
 }
 
 
