@@ -164,7 +164,7 @@ $alphabetz_bar .= '<li>';
 			global $post, $wp_query;;
 			
 			$condition = true;
-			if(have_posts())
+			if($ap=='' && have_posts())
 			$condition = ($wp_query->post_count>1);
 			
 			$ap_go = (!is_single() && $condition);		
