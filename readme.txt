@@ -6,7 +6,7 @@ Tags: alphabetic pagination, pagination, filtering, alphabetic filtering, alphab
 
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Alphabetic pagination is a great plugin to filter your posts/pages with alphabets. It is simple to use and easy to understand for customization. You can choose horizontal or vertical layout settings and alphabets lower/uppercase settings. It is coded to provide you the ultimate convenience that you will save your time instead of customizing the queries. It ensures the security measures required to be a good addition in WordPress Plugins collection.
