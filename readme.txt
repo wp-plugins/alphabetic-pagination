@@ -81,6 +81,7 @@ Method-B:
 == Changelog ==
 = 1.3.0 =
 * Hide/Show pagination if only one post available? (Added)
+* Posts which starts with numeric values, can be sorted now!
 = 1.2.8 =
 * is_main_query (Notice) in wp_debug - Fixed
 = 1.2.7 =
@@ -129,6 +130,7 @@ Few bugs are fixed.
 == Upgrade Notice ==
 = 1.3.0 =
 Hide/Show pagination if only one post available? (Added)
+Posts which starts with numeric values, can be sorted now!
 = 1.2.8 =
 is_main_query (Notice) in wp_debug - Fixed
 = 1.2.7 =

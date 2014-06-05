@@ -46,7 +46,7 @@
                                             $alphabetz_bar .= '<ul class="ap_'.$language.' ap_pagination case_'.get_option('ap_case').' layout_'.get_option('ap_layout').' '.get_option('ap_style').'">';
 											
 $alphabetz_bar .= '<li>';
-                                                    $alphabetz_bar .= '<a href="'.$_SERVER["REQUEST_URI"].'">#</a>';
+                                                    $alphabetz_bar .= '<a href="'.add_query_arg( array('ap' => 'numeric'), $_SERVER["REQUEST_URI"]).'"  class="'.(strtolower($ap)=='numeric'?'selected':'').'">#</a>';
 
                                                     $alphabetz_bar .= '</li>';
 																								
@@ -239,9 +239,13 @@ $alphabetz_bar .= '<li>';
 		function ap_where_clause($where=''){
 			global $wpdb;
 			global $ap;
-
-			$where .= ' AND '.$wpdb->prefix.'posts.post_title LIKE "'.mysql_real_escape_string($ap).'%"';
 			
+			if($ap=='numeric'){
+				$where .= ' AND '.$wpdb->prefix.'posts.post_title NOT REGEXP \'^[[:alpha:]]\'';
+			}else{
+				$where .= ' AND '.$wpdb->prefix.'posts.post_title LIKE "'.mysql_real_escape_string($ap).'%"';
+			}
+			$where;
 			return $where;
 	
 		}
