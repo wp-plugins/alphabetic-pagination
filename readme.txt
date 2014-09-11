@@ -20,7 +20,7 @@ Alphabetic pagination is a great plugin to filter your posts/pages with alphabet
 * License: GPL 3. See License below for copyright jots and tittles.
 
 Detailed description.
-<iframe src="//player.vimeo.com/video/105855225" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/105855225">WordPress Plugin - Alphabetic Pagination</a> from <a href="http://vimeo.com/user32151001">Fahad Mahmood</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe src="//player.vimeo.com/video/105855225" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/105855225">WordPress Plugin - Alphabetic Pagination</a> from <a href="http://vimeo.com/user32151001">Fahad Mahmood</a>.</p>
 Important!
 
 1- Upcoming features will be announced here so be in touch and also post me your appreciation, i need it.
