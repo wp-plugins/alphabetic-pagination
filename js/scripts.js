@@ -35,8 +35,10 @@ jQuery(document).ready(function($){
 		}
 	}
 	
-	jQuery('body').on('#tax_selector', 'change',function(){
-		var type = jQuery(this).val();				
+	
+	$('#tax_selector').change(function(){
+		var type = $(this).val();	
+				
 		if(type.length>0)
 		ap_methods.load_sub_items(type);
 

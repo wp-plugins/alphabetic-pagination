@@ -409,6 +409,7 @@ $alphabetz_bar .= '<li>';
 	if(!function_exists('ap_where')){
 		function ap_where($where){
 
+
 			$where = ap_where_clause($where);
 			
 			return $where;
@@ -610,13 +611,13 @@ function render_alphabets($settings = array()){
 		
 		wp_enqueue_script(
 			'ap-scripts',
-			plugins_url('../js/scripts.js', __FILE__),
+			plugins_url('js/scripts.js', dirname(__FILE__)),
 			array('jquery')
 		);	
 		
 		
 	
-		wp_register_style('ap-pagination', plugins_url('../css/style.css', __FILE__));
+		wp_register_style('ap-pagination', plugins_url('css/style.css', dirname(__FILE__)));
 		
 		
 		wp_enqueue_style( 'ap-pagination' );
