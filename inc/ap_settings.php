@@ -1,6 +1,6 @@
 <?php
 
-global $ap_implementation, $premium_link, $ap_data;
+global $ap_implementation, $premium_link, $ap_data, $ap_custom;
 $ap_implementation = get_option('ap_implementation');
 require_once('languages.php');
 $dom_selectors = array(
@@ -49,7 +49,7 @@ $ap_numeric_sign = (get_option('ap_numeric_sign')==0?false:true);
 
         
 
-<div class="icon32" id="icon-options-general"><br></div><h2>Alphabetic Pagination (<?php echo $ap_data['Version']; ?>) - Settings</h2> <div class="ap_video_tutorial">Help Required? Click here!</div>
+<div class="icon32" id="icon-options-general"><br></div><h2>Alphabetic Pagination <?php echo '('.$ap_data['Version'].($ap_custom?') Pro':')'); ?> - Settings</h2> <div class="ap_video_tutorial">Help Required? Click here!</div>
 
 
 
