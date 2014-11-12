@@ -52,10 +52,11 @@
 
 	function ap_menu()
 	{
-
-
-
-		 add_options_page('Alphabetic Pagination', 'Alphabetic Pagination', 'update_core', 'alphabetc_pagination', 'alphabetc_pagination');
+		global $ap_custom;
+		
+		$title = 'Alphabetic Pagination'.($ap_custom?' Pro':'');
+		
+		add_options_page($title, $title, 'update_core', 'alphabetc_pagination', 'alphabetc_pagination');
 
 
 
@@ -400,8 +401,29 @@ $alphabetz_bar .= '<li>';
 
 	if(!function_exists('ap_where_clause')){
 		function ap_where_clause($where=''){
+			
+			
+			
+			
 			global $wpdb;
-			global $ap;
+			global $ap, $apc, $ap_custom, $ap_queries, $ap_query;
+			
+			$ap_queries++;
+			
+			
+			
+			
+			if($ap_query && $ap_query!=$ap_queries)
+			return $where;
+			
+			
+						
+			if($ap_custom && $ap_query)
+			$ap = $apc;
+			
+
+			
+			
 			
 			if($ap=='numeric'){
 				$where .= ' AND '.$wpdb->prefix.'posts.post_title NOT REGEXP \'^[[:alpha:]]\'';
@@ -409,11 +431,52 @@ $alphabetz_bar .= '<li>';
 				$where .= ' AND '.$wpdb->prefix.'posts.post_title LIKE "'.mysql_real_escape_string($ap).'%"';
 			}
 			$where;
+			//echo $where.'<br /><br />';
 			return $where;
 	
 		}
 	}
 
+	
+	if(!function_exists('set_ap_query_1')){
+		function set_ap_query_1(){
+			global $ap_query;
+			$ap_query = 1;
+		}
+	}	
+	if(!function_exists('set_ap_query_2')){
+		function set_ap_query_2(){
+			global $ap_query;
+			$ap_query = 2;
+		}
+	}	
+	if(!function_exists('set_ap_query_3')){
+		function set_ap_query_3(){
+			global $ap_query;
+			$ap_query = 3;
+		}
+	}	
+	if(!function_exists('set_ap_query_4')){
+		function set_ap_query_4(){
+			global $ap_query;
+			$ap_query = 4;
+		}
+	}	
+	if(!function_exists('set_ap_query_5')){
+		function set_ap_query_5(){
+			global $ap_query;
+			$ap_query = 5;
+		}
+	}	
+	if(!function_exists('set_ap_query_6')){
+		function set_ap_query_6(){
+			global $ap_query;
+			$ap_query = 6;
+		}
+	}						
+
+	
+	
 	if(!function_exists('ap_pagination')){
 		function ap_pagination($query){
 
@@ -421,9 +484,9 @@ $alphabetz_bar .= '<li>';
 			
 			if(!is_admin()){
 
-
+				global $ap_custom;
 				
-				if($query->is_main_query()){
+				if($query->is_main_query() && !$ap_custom){
 					ap_where_filter();
 				} 
 			}
@@ -446,6 +509,7 @@ $alphabetz_bar .= '<li>';
 
 	if(!function_exists('ap_where_filter')){
 		function ap_where_filter(){
+			
 			add_filter( 'posts_where' , 'ap_where' );	
 			pre_render_alphabets();
 		}
@@ -615,10 +679,20 @@ function render_alphabets($settings = array()){
 
 
 	function ap_plugin_links($links) { 
-		global $premium_link;
-		$settings_link = '<a href="options-general.php?page=alphabetc_pagination">Settings</a>'; 
-		$premium_link = '<a href="'.$premium_link.'" title="Go Premium" target=_blank>Go Premium</a>'; 
-		array_unshift($links, $settings_link,$premium_link); 
+		global $premium_link, $ap_custom;
+		
+		$settings_link = '<a href="options-general.php?page=alphabetc_pagination">Settings</a>';
+		
+		if($ap_custom){
+			array_unshift($links, $settings_link); 
+		}else{
+			 
+			$premium_link = '<a href="'.$premium_link.'" title="Go Premium" target=_blank>Go Premium</a>'; 
+			array_unshift($links, $settings_link, $premium_link); 
+		
+		}
+		
+		
 		return $links; 
 	}
 	

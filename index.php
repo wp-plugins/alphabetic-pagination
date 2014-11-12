@@ -38,11 +38,12 @@ License: GPL3
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         
 
-	global $ap, $apc, $ap_implementation, $rendered, $premium_link, $ap_data, $ap_dir, $alphabets_bar, $ap_custom;
+	global $ap, $apc, $ap_implementation, $rendered, $premium_link, $ap_data, $ap_dir, $alphabets_bar, $ap_custom, $ap_queries, $ap_query;
 	$ap_dir = plugin_dir_path( __FILE__ );
 	
 	$ap_custom = file_exists($ap_dir.'inc/functions_extended.php');
-	
+	$ap_queries = 0;
+	$ap_query = false;
 	$rendered = FALSE;
 	$premium_link = 'http://shop.androidbubbles.com/product/alphabetic-pagination-pro';
 	define('AP_CUSTOM', 'custom');

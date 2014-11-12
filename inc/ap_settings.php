@@ -95,7 +95,7 @@ The following option enables Alphabetical Pagination on all other templates.</di
 </td>
 <td rowspan="5" width="54%" valign="top">
 <div class="ap_shortcode <?php echo ($ap_implementation==AP_CUSTOM?'':'hide'); ?>">
-<h4>Shortcode:</h4> <a href="<?php echo $premium_link; ?>" title="This is a premium feature." target="_blank">Go Premium for Shortcode</a><br />
+<h4>Shortcode:</h4> <?php if(!$ap_custom){ ?><a href="<?php echo $premium_link; ?>" title="This is a premium feature." target="_blank">Go Premium for Shortcode</a><?php } ?><br />
 <br />
 
 <code>
