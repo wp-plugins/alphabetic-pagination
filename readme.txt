@@ -83,7 +83,7 @@ Method-B:
 [Alphabetic Pagination Quick Start]: http://www.websitedesignwebsitedevelopment.com/wordpress/plugins/alphabetic-pagination
 
 == Changelog ==
-= 1.5.1 =
+= 1.5.2 =
 * Deprecated function mysql_real_escape_string() is replaced with the recommended function esc_sql().
 = 1.5 =
 * Shortcodes are available (Premium Feature)
@@ -145,7 +145,7 @@ Few bugs are fixed.
 * Default settings are implemented for uppercase and horizontal layout.
 
 == Upgrade Notice ==
-= 1.5.1 =
+= 1.5.2 =
 Deprecated function mysql_real_escape_string() is replaced with the recommended function esc_sql().
 = 1.5 =
 Numeric sign visibility can be managed from settings now.
