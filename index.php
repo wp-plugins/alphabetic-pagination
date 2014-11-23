@@ -38,9 +38,9 @@ License: GPL3
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         
 
-	global $ap, $apc, $ap_implementation, $rendered, $premium_link, $ap_data, $ap_dir, $alphabets_bar, $ap_custom, $ap_queries, $ap_query;
+	global $ap, $apc, $ap_implementation, $rendered, $premium_link, $ap_data, $ap_dir, $alphabets_bar, $ap_custom, $ap_queries, $ap_query, $css_arr;
 	$ap_dir = plugin_dir_path( __FILE__ );
-	
+	$css_arr = array('');
 	$ap_custom = file_exists($ap_dir.'inc/functions_extended.php');
 	$ap_queries = 0;
 	$ap_query = false;
@@ -78,6 +78,9 @@ License: GPL3
 		add_action( 'wp_ajax_ap_tax_types', 'ap_tax_types_callback' );
 		$plugin = plugin_basename(__FILE__); 
 		add_filter("plugin_action_links_$plugin", 'ap_plugin_links' );	
+		
+		if($ap_custom)
+		add_action( 'admin_enqueue_scripts', 'ap_pro_admin_style', 99 );
 		
 	}else{
 		

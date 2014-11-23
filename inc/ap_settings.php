@@ -1,6 +1,6 @@
 <?php
 
-global $ap_implementation, $premium_link, $ap_data, $ap_custom;
+global $ap_implementation, $premium_link, $ap_data, $ap_custom, $css_arr;
 $ap_implementation = get_option('ap_implementation');
 require_once('languages.php');
 $dom_selectors = array(
@@ -12,8 +12,11 @@ $ap_styles = array(
 'ap_gogowords'=>'Gogo Words',
 'ap_chess'=>'AP Chess',
 'ap_classic'=>'AP Classic',
-'ap_mahjong'=>'AP Mahjong'   
+'ap_mahjong'=>'AP Mahjong'
 );
+if($ap_custom)
+$ap_styles['ap_premium'] = 'AP Premium';
+
 ksort($ap_styles);
 $ap_classes = implode(' ', array_keys($ap_styles));
 
@@ -45,7 +48,6 @@ $ap_numeric_sign = (get_option('ap_numeric_sign')==0?false:true);
 ?>
 
 <div class="wrap ap_settings_div">
-
 
         
 
@@ -532,3 +534,7 @@ jQuery(document).ready(function($) {
 	
 });	
 </script>
+
+<style type="text/css">
+<?php echo implode('', $css_arr); ?>
+</style>

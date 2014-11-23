@@ -716,3 +716,20 @@ function render_alphabets($settings = array()){
 	
 	}
 	
+	function ap_pro_admin_style() {
+		
+		global $css_arr;
+		
+		wp_register_style('ap-pagination-pro', plugins_url('css/admin-style.css', dirname(__FILE__)));
+		
+		
+		wp_enqueue_style( 'ap-pagination-pro' );
+		
+		$css_arr[] = '#menu-settings li.current {
+					border-left: 4px #25bcf0 solid;
+					border-right: 4px #fc5151 solid;
+					}
+					#menu-settings li.current a{
+						margin-left:-4px;
+					}';
+	}		
