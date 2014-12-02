@@ -1,6 +1,6 @@
 ﻿=== Alphabetic Pagination ===
 
-Contributors: Fahad Mahmood
+Contributors: fahadmahmood
 Donate link: http://goo.gl/GHX5N
 Tags: alphabetic pagination, pagination, filtering, alphabetic filtering, alphabetic sorting, alphabet listing, sorting posts, sorting pages, alphabetic navigation, multiple categories, multiple taxonomies
 
