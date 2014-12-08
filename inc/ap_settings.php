@@ -14,8 +14,9 @@ $ap_styles = array(
 'ap_classic'=>'AP Classic',
 'ap_mahjong'=>'AP Mahjong'
 );
-if($ap_custom)
-$ap_styles['ap_premium'] = 'AP Premium';
+if($ap_custom){
+	$ap_styles['ap_miami'] = 'AP Miami';
+}
 
 ksort($ap_styles);
 $ap_classes = implode(' ', array_keys($ap_styles));

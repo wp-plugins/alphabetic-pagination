@@ -93,7 +93,8 @@ License: GPL3
 			add_filter('pre_get_posts', 'ap_pagination', 1);
 			//WILL WORK FROM SETTINGS
 			add_action('wp_footer', 'ap_ready');
-		}elseif($ap_custom && $ap_implementation==AP_CUSTOM){		
+		}
+		if($ap_custom){		
 			include($ap_dir.'inc/functions_extended.php');
 		}
 		

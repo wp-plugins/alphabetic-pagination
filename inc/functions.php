@@ -478,9 +478,9 @@ $alphabetz_bar .= '<li>';
 			
 			if(!is_admin()){
 
-				global $ap_custom;
+				global $ap_custom, $ap_implementation;
 				
-				if($query->is_main_query() && !$ap_custom){
+				if($query->is_main_query() && $ap_implementation=='auto'){
 					ap_where_filter();
 				} 
 			}
