@@ -1,7 +1,6 @@
 ﻿=== Alphabetic Pagination ===
 
-Contributors: Fahad Mahmood
-Donate link: http://goo.gl/GHX5N
+Contributors: fahadmahmood
 Tags: alphabetic pagination, pagination, filtering, alphabetic filtering, alphabetic sorting, alphabet listing, sorting posts, sorting pages, alphabetic navigation
 
 Requires at least: 3.0
