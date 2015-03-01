@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+div.ap_settings_div {
+	background:url("../images/icon-128x128.png") no-repeat right 45px;
+	background-size:100px 100px;
+}
+
+div.ap_settings_div .form-table {
+	margin-top:30px;
+}
+
+div.ap_settings_div .form-table th {
+	background-color:#ccc;
+	padding:20px 10px;
+}
+
+div.ap_shortcode {
+	background-color:#ff4f4f;
+}
+
+div.ap_shortcode code {
+	color:#fff;
+	background-color:#24bbf0;
+}
+
+div.ap_shortcode h4 {
+	color:#252525;
+	background-color:#f9cb49;
+	font-size:16px;
+}
+
+div.ap_shortcode, 
+.alphabets_section,
+.ap_numeric_sign {
+	border-left:4px solid #fff;
+    padding: 10px 10px 20px 10px;
+    width: 97%;
+}
+
+.alphabets_section {
+	background-color:#f9b41a;
+}
+
+.ap_numeric_sign {
+    background-color: #d8ca9e;
+	margin-bottom:15px;
+}
+
+
+
+
+
+ul.ap_premium {
+	padding:0px;
+	width:98%;
+}
+ul.ap_premium li{
+	background:url("../images/pagi-item-bg.png") no-repeat center center;
+	height:36px;
+	line-height:26px;
+	text-align:center;
+	width:42px;
+	padding:0;
+	margin:0px;
+}
+
+ul.ap_premium li a,
+ul.ap_premium li a:visited {
+	color:#fff;
+	display:block;
+}
+
+ul.layout_H.ap_premium li {
+	display:inline-block;
+	float:none;
+}
+
+ul.layout_V.ap_premium {
+    overflow: hidden;
+    width: 28px;	
+}
+ul.layout_V.ap_premium li{
+	padding:2px 2%;
+	margin:0px;
+	width:98%;
+}
+
+
+ul.ap_premium li a:hover,
+ul.ap_premium li a.selected,
+ul.ap_premium li a:hover,
+ul.ap_premium li a.selected{
+	color:#000;
+	font-weight:bold; 
+	text-decoration:none;
+}
+
+
+/* #Tablet 780px - Mobile 320px */
+
+    @media only screen and (min-width: 320px) and (max-width: 780px) {
+		
+		div.ap_settings_div {
+			background-position:right 15px;
+			background-size:50px 50px;
+		}
+		
+		div.ap_settings_div.wrap h2 {
+			width:75%;
+		}
+		
+		div.ap_settings_div .form-table {
+			margin-top:50px;
+		}
+		
+	}
