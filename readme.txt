@@ -22,7 +22,10 @@ Alphabetic pagination is a great plugin to filter your posts/pages and WooCommer
 
 Video Tutorial:
 
-<a href="http://www.youtube.com/embed/N-ewX28pLXs">Click here to watch video tutorial for Alphabetic Pagination</a>.
+<a href="http://www.youtube.com/embed/N-ewX28pLXs">Click here to watch video tutorial for Alphabetic Pagination on Youtube</a>.
+
+<a href="http://www.tutorsloop.net/app/live.php?id=3580318">Click here to watch video tutorial for Alphabetic Pagination on TutorsLoop</a>.
+
 
 Important!
 
