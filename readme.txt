@@ -85,6 +85,8 @@ Method-B:
 [Alphabetic Pagination Quick Start]: http://www.websitedesignwebsitedevelopment.com/wordpress/plugins/alphabetic-pagination
 
 == Changelog ==
+= 2.0 =
+* All posts will be sorted by post_title ASC when you will use pagination. Thanks to Darrick Kouns.
 = 1.9 =
 * Single category selection was not working perfectly in heavily widgetized website. The issue is fixed with init hook. Thanks to Francisco.
 = 1.8 =
