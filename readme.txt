@@ -4,7 +4,7 @@ Contributors: fahadmahmood
 Tags: alphabetic pagination, pagination, filtering, alphabetic filtering, alphabetic sorting, alphabet listing, sorting posts, sorting pages, alphabetic navigation, multiple categories, multiple taxonomies
 
 Requires at least: 3.0
-Tested up to: 4.2
+Tested up to: 4.3
 Stable tag: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
