@@ -2,6 +2,18 @@
 
 
 
+	function ap_search_orderby($orderby) {
+	
+		global $wpdb;	
+	
+		if ( isset($_GET['ap']) ) {
+			$orderby = $wpdb->prefix . "posts.post_title ASC";	
+		}
+	
+		return $orderby;
+	
+	}
+	
 	
 
 	//FOR QUICK DEBUGGING
@@ -490,6 +502,7 @@ if(
 			
 
 			//echo $where.'<br /><br />';
+			add_filter('posts_orderby', 'ap_search_orderby', 999);
 			return $where;
 	
 		}
