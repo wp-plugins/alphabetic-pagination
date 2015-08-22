@@ -529,10 +529,9 @@ $alphabetz_bar .= '<li class="ap_numeric">';
 			if($ap_query && $ap_query!=$ap_queries)
 			return $where;
 			
+			//pre($ap_queries);
 			//$ap_query && $ap_query==$ap_queries && 
-			if(function_exists('ap_disable_empty')){
-				ap_disable_empty($where);
-			}
+
 			
 			if($ap=='numeric'){
 				$where .= ' AND '.$wpdb->prefix.'posts.post_title NOT REGEXP \'^[[:alpha:]]\'';
@@ -540,18 +539,24 @@ $alphabetz_bar .= '<li class="ap_numeric">';
 				$ap_arr = explode('-', $ap);
 				$ap_arr = array_filter($ap_arr, 'strlen');
 				if(count($ap_arr)>1){
+					$ap_arr = range(current($ap_arr), end($ap_arr));
 					$where .= ' AND (';
 					$mwhere = array();
 					foreach($ap_arr as $ap){
 						$mwhere[] = $wpdb->prefix.'posts.post_title LIKE "'.esc_sql($ap).'%"';
 					}
 					$where .= implode(' OR ', $mwhere).')';
-				}else{
+				}elseif($ap!=''){
 					$where .= ' AND '.$wpdb->prefix.'posts.post_title LIKE "'.esc_sql($ap).'%"';
 				}
 			}
-			
-
+	
+	
+			if(function_exists('ap_disable_empty')){
+				ap_disable_empty($where);
+			}
+						
+			//pre($ap_queries);
 			//echo $where.'<br /><br />';
 			add_filter('posts_orderby', 'ap_search_orderby', 999);
 			return $where;
@@ -643,11 +648,13 @@ $alphabetz_bar .= '<li class="ap_numeric">';
 
 	
 		if(!function_exists('render_alphabets')){
-function render_alphabets($settings = array()){
+		function render_alphabets($settings = array()){
 
 		global $ap_implementation;
 		global $rendered;
 
+		//if(isset($_GET['debug']))
+		//pre(ap_get_queries());
 		
 		$default_place = get_option('ap_dom')==''?'#content':get_option('ap_dom');
 		
@@ -864,3 +871,9 @@ function render_alphabets($settings = array()){
 						margin-left:-4px;
 					}';
 	}		
+	
+	function ap_get_queries(){
+		global $wpdb;
+		
+		return $wpdb->queries;
+	}
