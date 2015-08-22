@@ -15,7 +15,7 @@ Description: Alphabetic pagination is a great plugin to filter your posts/pages 
 
 
 
-Version: 2.1
+Version: 2.1.1
 
 
 
